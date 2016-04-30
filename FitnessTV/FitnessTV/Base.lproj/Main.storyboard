@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selection View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SelectionViewController" customModule="FitnessTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What workout would you like today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POF-Q5-EQ7">
+                                <rect key="frame" x="413" y="139" width="1095" height="83"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="70"/>
+                                <color key="textColor" red="1" green="0.84462477209999998" blue="0.8419153278" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eFx-jw-JFb">
+                                <rect key="frame" x="465" y="276" width="991" height="86"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRI-FG-tid">
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="86" id="3xR-gl-dcP"/>
+                                            <constraint firstAttribute="width" constant="195" id="uCG-r7-ZZC"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="HIIT"/>
+                                        <connections>
+                                            <action selector="didSelectHIITWorkout:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="wwA-gz-nJb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wB6-mt-xES">
+                                        <rect key="frame" x="215" y="0.0" width="220" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="7Tb-FJ-DX3"/>
+                                            <constraint firstAttribute="height" constant="86" id="QAP-8B-OnN"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Weights"/>
+                                        <connections>
+                                            <action selector="didSelectWeightsWorkout:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Qh6-th-V7o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXC-FN-BPa">
+                                        <rect key="frame" x="455" y="0.0" width="195" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="86" id="6xO-Tz-WwH"/>
+                                            <constraint firstAttribute="width" constant="195" id="jej-N6-wGE"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Yoga"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xm-dY-Cz8">
+                                        <rect key="frame" x="670" y="0.0" width="321" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="7 min workout"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vRI-FG-tid" firstAttribute="leading" secondItem="eFx-jw-JFb" secondAttribute="leading" id="bt0-Ob-8En"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How long do you want to workout for?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ad-Ua-zgi">
+                                <rect key="frame" x="380" y="499" width="1161" height="83"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="70"/>
+                                <color key="textColor" red="1" green="0.84462477209999998" blue="0.8419153278" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vlh-3c-3Ht">
+                                <rect key="frame" x="565" y="625" width="790" height="86"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5YA-7a-hOr">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="86" id="i3g-Jw-Sv1"/>
+                                            <constraint firstAttribute="width" constant="230" id="rGE-CH-GoT"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="&lt; 10 min"/>
+                                        <connections>
+                                            <action selector="didSelect10Min:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="1Nb-86-dq5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8T8-3i-B5P">
+                                        <rect key="frame" x="250" y="0.0" width="280" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="55Q-bq-vtI"/>
+                                            <constraint firstAttribute="height" constant="86" id="U8G-Yk-if1"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="10 - 30 min"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJM-M9-eI1">
+                                        <rect key="frame" x="550" y="0.0" width="240" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="PT8-oQ-jIa"/>
+                                            <constraint firstAttribute="height" constant="86" id="moB-to-VSt"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="&gt; 30 min"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5YA-7a-hOr" firstAttribute="leading" secondItem="Vlh-3c-3Ht" secondAttribute="leading" id="Lyk-cb-6lI"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rni-A3-grl">
+                                <rect key="frame" x="887" y="894" width="147" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="GO!"/>
+                                <connections>
+                                    <segue destination="gZb-ZK-MoO" kind="show" id="T2Z-IX-uRs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eFx-jw-JFb" firstAttribute="top" secondItem="POF-Q5-EQ7" secondAttribute="bottom" constant="54" id="6G3-m7-hkl"/>
+                            <constraint firstItem="POF-Q5-EQ7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="139" id="F1j-oB-8Ug"/>
+                            <constraint firstItem="Vlh-3c-3Ht" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LqW-sr-xfc"/>
+                            <constraint firstItem="rni-A3-grl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ltn-jN-q2m"/>
+                            <constraint firstItem="Vlh-3c-3Ht" firstAttribute="top" secondItem="2Ad-Ua-zgi" secondAttribute="bottom" constant="43" id="UXj-r7-vq0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rni-A3-grl" secondAttribute="bottom" constant="100" id="iB7-uX-YAW"/>
+                            <constraint firstItem="POF-Q5-EQ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ii9-eF-KAL"/>
+                            <constraint firstItem="2Ad-Ua-zgi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rV9-6W-B03"/>
+                            <constraint firstItem="eFx-jw-JFb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sEM-LY-Ft5"/>
+                            <constraint firstItem="2Ad-Ua-zgi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yNh-5y-URg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jjp-kz-5Uy">
+            <objects>
+                <viewController id="gZb-ZK-MoO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Irg-tj-OuO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ycu-le-43b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZPN-K2-n0r">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nUj-gY-X2R">
+                                <rect key="frame" x="20" y="0.0" width="1880" height="1080"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZHa-97-0AL">
+                                    <size key="itemSize" width="500" height="400"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="DuW-F5-hPj">
+                                        <rect key="frame" x="0.0" y="0.0" width="500" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nUj-gY-X2R" firstAttribute="leading" secondItem="ZPN-K2-n0r" secondAttribute="leadingMargin" id="2Yg-se-FG6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nUj-gY-X2R" secondAttribute="trailing" id="7WO-j6-vFa"/>
+                            <constraint firstItem="Ycu-le-43b" firstAttribute="top" secondItem="nUj-gY-X2R" secondAttribute="bottom" id="Tba-n5-ErK"/>
+                            <constraint firstItem="nUj-gY-X2R" firstAttribute="top" secondItem="Irg-tj-OuO" secondAttribute="bottom" id="cZz-z0-sPQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AKN-ob-TUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="1575"/>
+        </scene>
+    </scenes>
+</document>
