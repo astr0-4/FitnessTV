@@ -118,7 +118,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="GO!"/>
                                 <connections>
-                                    <segue destination="gZb-ZK-MoO" kind="show" id="T2Z-IX-uRs"/>
+                                    <segue destination="gZb-ZK-MoO" kind="show" identifier="WorkoutDetail" id="T2Z-IX-uRs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -140,10 +140,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Workout Detail View Controller-->
         <scene sceneID="Jjp-kz-5Uy">
             <objects>
-                <viewController id="gZb-ZK-MoO" sceneMemberID="viewController">
+                <viewController id="gZb-ZK-MoO" customClass="WorkoutDetailViewController" customModule="FitnessTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Irg-tj-OuO"/>
                         <viewControllerLayoutGuide type="bottom" id="Ycu-le-43b"/>

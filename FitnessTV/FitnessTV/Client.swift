@@ -3,11 +3,11 @@ import Foundation
 
 class Client: NSObject {
     
-    func retrieveKeyFromPList() -> String? {
+    func retrieveKeyFromPList() -> NSArray? {
         let pathOfPlist = NSBundle.mainBundle().pathForResource("keys", ofType: "plist")
         if let path = pathOfPlist {
             do {
-                return try String.init(contentsOfFile: path)
+                return try NSArray.init(contentsOfFile: path)
             }
             catch {
                print("no path!")
