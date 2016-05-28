@@ -5,7 +5,8 @@ use_frameworks!
 
 target 'FitnessTV' do
 
-pod "XCDYouTubeKit", "~> 2.5"
+pod 'XCDYouTubeKit', '~> 2.5'
+pod 'AFNetworking'
 
 end
 
