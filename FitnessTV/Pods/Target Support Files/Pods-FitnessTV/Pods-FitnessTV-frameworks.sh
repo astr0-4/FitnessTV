@@ -85,9 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-FitnessTV/AFNetworking.framework"
+  install_framework "Pods-FitnessTV/Alamofire.framework"
+  install_framework "Pods-FitnessTV/AlamofireImage.framework"
   install_framework "Pods-FitnessTV/XCDYouTubeKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-FitnessTV/AFNetworking.framework"
+  install_framework "Pods-FitnessTV/Alamofire.framework"
+  install_framework "Pods-FitnessTV/AlamofireImage.framework"
   install_framework "Pods-FitnessTV/XCDYouTubeKit.framework"
 fi

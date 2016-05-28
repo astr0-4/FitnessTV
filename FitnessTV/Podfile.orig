@@ -5,9 +5,11 @@ use_frameworks!
 
 target 'FitnessTV' do
 
-pod "XCDYouTubeKit", "~> 2.5"
+<<<<<<< 4b083c008f8cd563ca9db05a5f9a0789281cb59f
+pod 'XCDYouTubeKit', '~> 2.5'
 pod 'AFNetworking'
-pod 'AlamofireImage'
+=======
+>>>>>>> [FEATURE] Parse data for collection view
 
 end
 

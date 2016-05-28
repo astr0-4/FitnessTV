@@ -1,3 +1,4 @@
+<<<<<<< 4b083c008f8cd563ca9db05a5f9a0789281cb59f
 PODS:
   - AFNetworking (3.1.0):
     - AFNetworking/NSURLSession (= 3.1.0)
@@ -14,20 +15,16 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - Alamofire (3.4.0)
-  - AlamofireImage (2.4.0):
-    - Alamofire (~> 3.3)
   - XCDYouTubeKit (2.5.2)
 
 DEPENDENCIES:
   - AFNetworking
-  - AlamofireImage
   - XCDYouTubeKit (~> 2.5)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
-  AlamofireImage: 87408b652e0f5ae5fe364035f15aea8b9b24c77e
   XCDYouTubeKit: bb81db52d5539f8f34c4081f344980ef38f4644d
 
+=======
+>>>>>>> [FEATURE] Parse data for collection view
 COCOAPODS: 0.39.0
