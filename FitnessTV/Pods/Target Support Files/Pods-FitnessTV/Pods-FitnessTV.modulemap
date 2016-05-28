@@ -1,6 +1,0 @@
-framework module Pods_FitnessTV {
-  umbrella header "Pods-FitnessTV-umbrella.h"
-
-  export *
-  module * { export * }
-}

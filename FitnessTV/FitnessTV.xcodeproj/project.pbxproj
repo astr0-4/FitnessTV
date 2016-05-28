@@ -11,6 +11,8 @@
 		FA3FB1241CD51C3B00EB5D9F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FB1231CD51C3B00EB5D9F /* Client.swift */; };
 		FA3FB1261CD51FDA00EB5D9F /* WorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3FB1251CD51FDA00EB5D9F /* WorkoutDetailViewController.swift */; };
 		FA3FB1361CD63A6A00EB5D9F /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA3FB1351CD63A6A00EB5D9F /* keys.plist */; };
+		FA62027D1CE7ABCC001D4428 /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62027B1CE7ABCC001D4428 /* ThumbnailCell.swift */; };
+		FA62027E1CE7ABCC001D4428 /* ThumbnailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA62027C1CE7ABCC001D4428 /* ThumbnailCell.xib */; };
 		FAD998611CD4D8F5009EAB37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD998601CD4D8F5009EAB37 /* AppDelegate.swift */; };
 		FAD998631CD4D8F5009EAB37 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD998621CD4D8F5009EAB37 /* SelectionViewController.swift */; };
 		FAD998661CD4D8F5009EAB37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD998641CD4D8F5009EAB37 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 		FA3FB1231CD51C3B00EB5D9F /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		FA3FB1251CD51FDA00EB5D9F /* WorkoutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDetailViewController.swift; sourceTree = "<group>"; };
 		FA3FB1351CD63A6A00EB5D9F /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = keys.plist; path = ../keys.plist; sourceTree = "<group>"; };
+		FA62027B1CE7ABCC001D4428 /* ThumbnailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
+		FA62027C1CE7ABCC001D4428 /* ThumbnailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThumbnailCell.xib; sourceTree = "<group>"; };
 		FAD9985D1CD4D8F5009EAB37 /* FitnessTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD998601CD4D8F5009EAB37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD998621CD4D8F5009EAB37 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 				FA3FB1231CD51C3B00EB5D9F /* Client.swift */,
 				FAD998621CD4D8F5009EAB37 /* SelectionViewController.swift */,
 				FA3FB1251CD51FDA00EB5D9F /* WorkoutDetailViewController.swift */,
+				FA62027B1CE7ABCC001D4428 /* ThumbnailCell.swift */,
+				FA62027C1CE7ABCC001D4428 /* ThumbnailCell.xib */,
 				FAD998641CD4D8F5009EAB37 /* Main.storyboard */,
 				FAD998671CD4D8F5009EAB37 /* Assets.xcassets */,
 				FA3FB1351CD63A6A00EB5D9F /* keys.plist */,
@@ -264,6 +270,7 @@
 			files = (
 				FAD998681CD4D8F5009EAB37 /* Assets.xcassets in Resources */,
 				FAD998661CD4D8F5009EAB37 /* Main.storyboard in Resources */,
+				FA62027E1CE7ABCC001D4428 /* ThumbnailCell.xib in Resources */,
 				FA3FB1361CD63A6A00EB5D9F /* keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA62027D1CE7ABCC001D4428 /* ThumbnailCell.swift in Sources */,
 				FAD998631CD4D8F5009EAB37 /* SelectionViewController.swift in Sources */,
 				FAD998611CD4D8F5009EAB37 /* AppDelegate.swift in Sources */,
 				FA3FB1241CD51C3B00EB5D9F /* Client.swift in Sources */,
