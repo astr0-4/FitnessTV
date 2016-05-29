@@ -1,5 +1,6 @@
 
 import UIKit
+import AlamofireImage
 
 class WorkoutDetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -60,9 +61,9 @@ class WorkoutDetailViewController: UIViewController, UICollectionViewDelegate, U
         self.titles = optionalTitles.flatMap { $0 as? String }
         self.thumbnailURLs = optionalThumbnails.flatMap { $0 as? String }
         self.videoIds = optionalVideoIds.flatMap { $0 as? String }
-        print("videoIds : \(self.videoIds)")
-        print("thumbnails: \(self.thumbnailURLs)")
-        print("titles: \(self.titles)")
+        print("videoIds : \(self.videoIds) \(self.videoIds.count)")
+        print("thumbnails: \(self.thumbnailURLs) \(self.thumbnailURLs.count)")
+        print("titles: \(self.titles.count)")
         self.thumbnailCollectionView.reloadData()
         
         }
@@ -75,9 +76,17 @@ class WorkoutDetailViewController: UIViewController, UICollectionViewDelegate, U
             fatalError("Unrecognized cell type")
         }
         if self.titles.count > 0 {
-            thumbnailCell.thumbnailTitleLabel.text = self.titles[indexPath.row]
+            thumbnailCell.thumbnailTitleLabel.text = self.titles[indexPath.item]
         }
-//        thumbnailCell.thumbnailImageView.image = self.thumbnailURLs
+    
+        if self.thumbnailURLs.count > 0 {
+            guard let imageURL = NSURL(string: self.thumbnailURLs[indexPath.item]) else {
+                fatalError("ACK")
+            }
+            
+            thumbnailCell.thumbnailImageView.af_setImageWithURL(imageURL)
+        }
+        
         return thumbnailCell
     }
     
